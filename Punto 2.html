@@ -1,0 +1,30 @@
+<!-- 2. Tengo un botón, cuando este se presione debe generar un mensaje a través de console.log con su nombre y apellido -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+
+<body>
+<h1>Identificacion</h1>
+
+    <script>
+        function mensaje()
+        {
+            let persona = {
+                nombre: "Ignacio",
+                apellido: "Churata Alzu",
+                edad: 17,
+                profesion: "Estudiante"
+            };
+            console.log(persona);
+        }
+       
+    </script>
+    <button type="button" id="mensaje" onclick=mensaje()>Click aqui</button>
+
+</body>
+</html>

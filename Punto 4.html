@@ -1,0 +1,21 @@
+<!-- 4. Crear un input donde se pueda ingresar un nombre y un console.log me devuelva la cantidad de caracteres utilizados -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres</title>
+</head>
+<body>
+    <h2>Ingresar caracteres:</h2>
+    <input type="text" id="mensaje" placeholder="Escribe aquí">
+    <button onclick="contarCaracteres()">Contar</button>
+
+    <script>
+        function contarCaracteres() {
+            const nombre = document.getElementById("mensaje").value;
+            console.log("El mensaje ingresado tiene " + nombre.length + " caracteres.");
+        }
+    </script>
+</body>
+</html>

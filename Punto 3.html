@@ -1,0 +1,36 @@
+<!-- 3. Crear dos input de números y un botón, al pulsar el botón, mostrar en un alert quien es el mayor de los dos -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+
+<body>
+<h1>Averigua el numero mas grande</h1>
+
+    <script>
+        function mayor()
+        {
+            let n1 = document.getElementById("n1").value;
+            let n2 = document.getElementById("n2").value;
+            let boton =document.getElementById("boton");
+            n1 = parseInt(n1);
+            n2 = parseInt(n2);
+            if(n1 > n2){
+                alert("El mayor es: "+n1)
+            }else{
+                alert("El mayor es: "+n2)
+            }  
+        }
+    </script>
+    <input type="text" id="n1" placeholder="Escribe un numero...">
+    <br><br>
+    <input type="text" id="n2" placeholder="Escribe otro numero...">
+    <br><br>
+    <button type="button" id="boton" onclick=mayor()>Comparar</button>
+
+</body>
+</html>
